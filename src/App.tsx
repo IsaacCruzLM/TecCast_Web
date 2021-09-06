@@ -1,14 +1,15 @@
 import React from 'react';
-import ThemeProvider from './context/ThemeContext/themeProvider';
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
-  return (
-    <ThemeProvider>
-      <div className="App">
-        TecCast
-      </div>
-    </ThemeProvider>
-  );
-}
+import ThemeProvider from './context/ThemeContext/themeProvider';
+import Routes from './Routes';
+
+const App: React.FC = () => (
+  <ThemeProvider>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+  </ThemeProvider>
+);
 
 export default App;
