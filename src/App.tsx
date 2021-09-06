@@ -1,10 +1,13 @@
 import React from 'react';
+import ThemeProvider from './context/ThemeContext/themeProvider';
 
 function App() {
   return (
-    <div className="App">
-      TecCast
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        TecCast
+      </div>
+    </ThemeProvider>
   );
 }
 
