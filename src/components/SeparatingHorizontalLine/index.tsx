@@ -1,13 +1,15 @@
 import React from 'react';
 
+import LineContainer from './styles';
+
 const SeparatingHorizontalLine: React.FC = () => (
-  <div className="horizontalLine">
-    <hr />
+  <LineContainer>
+    <div />
     <span>
       OU
     </span>
-    <hr />
-  </div>
+    <div />
+  </LineContainer>
 );
 
 export default SeparatingHorizontalLine;

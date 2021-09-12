@@ -3,14 +3,16 @@ import React from 'react';
 import LoginForm from '../../components/LoginForm';
 import SeparatingVerticalLine from '../../components/SeparatingVerticalLine';
 
-import Logo from '../../assets/Logo.png';
+import Logo from '../../assets/Logo_Transparent.png';
+
+import Container from './styles';
 
 const LoginPage: React.FC = () => (
-  <main className="loginPage">
+  <Container className="loginPage">
     <img src={Logo} alt="TecCast" />
     <SeparatingVerticalLine />
     <LoginForm />
-  </main>
+  </Container>
 );
 
 export default LoginPage;

@@ -2,19 +2,21 @@ import React from 'react';
 import { Button } from '@material-ui/core';
 import SeparatingHorizontalLine from '../SeparatingHorizontalLine';
 
+import { Container, Form, RegisterContainer } from './styles';
+
 const LoginForm: React.FC = () => (
-  <div className="loginForms">
-    <form action="">
+  <Container>
+    <Form action="">
       <input placeholder="Insira seu Email" />
       <input placeholder="Senha de Acesso" />
       <Button variant="contained">ENTRAR</Button>
-    </form>
+    </Form>
     <SeparatingHorizontalLine />
-    <div>
-      <span>Não tem uma conta?</span>
+    <RegisterContainer>
+      Não tem uma conta?
       <span>Inscrever-se</span>
-    </div>
-  </div>
+    </RegisterContainer>
+  </Container>
 );
 
 export default LoginForm;

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './styles.css';
+import Line from './styles';
 
 const SeparatingVerticalLine: React.FC = () => (
-  <div className="verticalLine" />
+  <Line />
 );
 
 export default SeparatingVerticalLine;
